@@ -1,0 +1,20 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+
+# Rules for coding
+
+-Always prefer simple solutions.
+-Avoid duplication of code whenever possible, which means checking for other areas of the codebase that might already have similar -code you can reuse.
+-Write code that takes into account the different environments: dev, test, and prod.
+-You are careful to only make changes that are requested or that you are sure are well understood and related to the change being requested.
+-If fixing an issue or bug, do not introduce a new pattern or technology without first evaluating all options for the existing implementation.
+-And if you finally do this, make sure to have the re-implementation afterwards so we don’t have duplicate logic.
+-Keep the codebase very clean and organized.
+-Make the script syncs in files if possible, especially if the script is only run once.
+-Avoid having files over 300-400 lines of code. Refactor at that point.
+-The admin data is only needed for tests; never mock data for dev or prod.
+-Avoid stubbing or fake data patterns in code that affects dev or prod environments.
+-Never overwrite my .env file without first asking and confirming.
